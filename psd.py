@@ -1,4 +1,5 @@
-import warnings
+
+
 from psd_tools import PSDImage
 
 
@@ -17,12 +18,12 @@ for i in range(10):
     print('')
 
 # Output the number of layers
-print("Number of layers:", num_layers)
+print("Number of layers:", num_layers,end='\n\n')
 
 
 #this gives the resolutions of each layer
 for i in range(num_layers):
-    print(f'layer {i} has:\nwidth= {layers[i].size[0]},  height={layers[i].size[1]}')
+    print(f'layer {i+1} has: width= {layers[i].size[0]}, height={layers[i].size[1]}',end='\n\n')
 
 #this is to print the text from each layer
 for _layers in psd:
